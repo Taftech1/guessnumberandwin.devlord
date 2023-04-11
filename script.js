@@ -59,7 +59,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.guess').value = '';
       document.querySelector('.number').textContent = '?';
       document.querySelector('.reveal').style.display = ' block';
-      document.querySelector('.reveal').textContent = 'Toggle!';
+//       document.querySelector('.reveal').textContent = 'Toggle!';
     }
   } else if (guessedNumber === randomSecretNumber) {
     if (score > highScore) {
@@ -79,7 +79,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.number').textContent = randomSecretNumber;
     document.querySelector('.guess').value = '';
     document.querySelector('.reveal').style.display = 'none';
-    document.querySelector('.reveal').textContent = 'Toggle!';
+//     document.querySelector('.reveal').textContent = 'Toggle!';
   } else if (guessedNumber > randomSecretNumber) {
     if (score > 0) {
       document.querySelector('.message').textContent = 'Too high';
@@ -93,7 +93,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.guess').value = '';
       document.querySelector('.number').textContent = '?';
       document.querySelector('.reveal').style.display = ' block';
-      document.querySelector('.reveal').textContent = 'Toggle!';
+//       document.querySelector('.reveal').textContent = 'Toggle!';
       failsound.play();
     } else {
       document.querySelector('.message').textContent = ' You lost the Game';
@@ -115,7 +115,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.guess').value = '';
       document.querySelector('.number').textContent = '?';
       document.querySelector('.reveal').style.display = ' block';
-      document.querySelector('.reveal').textContent = 'Toggle!';
+//       document.querySelector('.reveal').textContent = 'Toggle!';
       failsound.play();
     } else {
       document.querySelector('.message').textContent = ' You lost the Game';
