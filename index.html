@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again">New Game!</button>
+      <button class="btn reveal">Toggle!</button>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message"> Start guessing...</p>
+        <p class="result"></p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <section>
+      <audio src="success-fanfare-trumpets-6185.mp3" class="winsound" type="mp3"></audio>
+      <audio src="failure-drum-sound-effect-2-7184.mp3" class="failsound" type="mp3"></audio>
+      <audio src="8bit-lose-life-sound-wav-97245.mp3" class="losesound" type="mp3"></audio>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
