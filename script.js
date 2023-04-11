@@ -148,11 +148,15 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.reveal').textContent = 'Toggle!';
 });
 
+document.querySelector('.between').addEventListener("click", function () {
+  document.querySelector('.number').textContent = randomSecretNumber;
+})
+
 document.querySelector('.reveal').addEventListener('click', function () {
   if (score >= 0) {
     if (toggle) {
       toggle = false;
-    document.querySelector('.number').textContent = randomSecretNumber;
+    document.querySelector('.number').textContent = "?";
       document.querySelector('.reveal').textContent = 'Toggle>';
 //       score -= 1;
       document.querySelector('.score').textContent = score;
