@@ -11,7 +11,7 @@
 // console.log(userInput.value)
 
 ///HANDING CLICK EVENTS
-let toggle = true;
+let toggle = false;
 let score = 20;
 let highScore = 0;
 const winsound = document.querySelector('.winsound');
