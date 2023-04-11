@@ -130,6 +130,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 document.querySelector('.again').addEventListener('click', function () {
+  toggle = true;
   if (score === 0) {
     document.querySelector('.highscore').textContent = '0';
   }
@@ -151,9 +152,9 @@ document.querySelector('.reveal').addEventListener('click', function () {
   if (score >= 0) {
     if (toggle) {
       toggle = false;
-      document.querySelector('.number').textContent = randomSecretNumber;
+//       document.querySelector('.number').textContent = randomSecretNumber;
       document.querySelector('.reveal').textContent = 'Toggle>';
-      score -= 1;
+//       score -= 1;
       document.querySelector('.score').textContent = score;
     } else {
       toggle = true;
