@@ -59,6 +59,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.guess').value = '';
       document.querySelector('.number').textContent = '?';
       document.querySelector('.reveal').style.display = ' block';
+      failsound.play();
 //       document.querySelector('.reveal').textContent = 'Toggle!';
     }
   } else if (guessedNumber === randomSecretNumber) {
