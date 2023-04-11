@@ -235,7 +235,8 @@ header .between{
   display: none;
 }
 .reveal:hover{
-  color: green;
+  background-color: green;
+  color: white;
 }
 
 .result{
