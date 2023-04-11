@@ -158,6 +158,7 @@ document.querySelector('.reveal').addEventListener('click', function () {
       document.querySelector('.score').textContent = score;
     } else if(toggle === false) {
       toggle = true;
+      document.querySelector('.number').textContent = '?';
       document.querySelector('.score').textContent = score;
       document.querySelector('.reveal').textContent = 'Toggle!';
     }
