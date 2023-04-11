@@ -23,6 +23,10 @@ document.querySelector('.reveal').style.display = 'block';
 
 let randomSecretNumber = Math.round(Math.random() * 20);
 
+if (randomSecretNumber === 0) {
+    randomSecretNumber = Math.round(Math.random() * 20);
+  } 
+
 document.querySelector('.check').addEventListener('click', function () {
   const guessedNumber = Number(document.querySelector('.guess').value);
   console.log(guessedNumber);
