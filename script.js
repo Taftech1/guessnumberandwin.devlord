@@ -156,9 +156,8 @@ document.querySelector('.reveal').addEventListener('click', function () {
       document.querySelector('.reveal').textContent = 'Toggle>';
 //       score -= 1;
       document.querySelector('.score').textContent = score;
-    } else if(!toggle) {
+    } else if(toggle === false) {
       toggle = true;
-//       document.querySelector('.number').textContent = randomSecretNumber;
       document.querySelector('.score').textContent = score;
       document.querySelector('.reveal').textContent = 'Toggle!';
     }
