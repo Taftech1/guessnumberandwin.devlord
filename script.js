@@ -152,11 +152,11 @@ document.querySelector('.reveal').addEventListener('click', function () {
   if (score >= 0) {
     if (toggle) {
       toggle = false;
-//       document.querySelector('.number').textContent = randomSecretNumber;
+    document.querySelector('.number').textContent = randomSecretNumber;
       document.querySelector('.reveal').textContent = 'Toggle>';
 //       score -= 1;
       document.querySelector('.score').textContent = score;
-    } else {
+    } else if(!toggle) {
       toggle = true;
       document.querySelector('.number').textContent = randomSecretNumber;
       document.querySelector('.score').textContent = score;
