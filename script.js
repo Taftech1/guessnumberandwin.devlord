@@ -40,7 +40,7 @@ document.querySelector(".check").addEventListener("click", function () {
     if (guessedNumber === randomSecretNumber) {
       if (score > 0) {
         let HiLo = guessedNumber > randomSecretNumber ? "Too High" : "Too low";
-        let EhiLo = guessedNumber === randomSecretNumber ? "Great" : HiLo;
+        let EhiLo = guessedNumber === randomSecretNumber ? "Try more " : HiLo;
         randomSecretNumber = Math.round(Math.random() * 20 + 1);
         document.querySelector(".message").textContent = EhiLo;
         document.querySelector(".result").textContent = randomSecretNumber;
