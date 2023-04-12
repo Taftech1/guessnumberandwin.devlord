@@ -25,7 +25,7 @@ document.querySelector(".score").textContent = score;
 
 let randomSecretNumber = Math.round(Math.random() * 20 + 1);
 
-document.querySelector(".number").textContent = randomSecretNumber;
+// document.querySelector(".number").textContent = randomSecretNumber;
 
 document.querySelector(".check").addEventListener("click", function () {
   const guessedNumber = Number(document.querySelector(".guess").value);
